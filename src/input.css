@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html ,body{
+    font-family: Inter;
+position: relative;
+}
+
+@layer base {
+    h2{
+        @apply font-extrabold leading-tight text-4xl text-gray-900
+    }
+  
+}
+@layer components {
+    .wrapper {
+       @apply max-w-[1280px]  w-[90%] m-auto
+    }
+    .button {
+        @apply bg-primary text-white  rounded-lg
+    }
+    .divider {
+        @apply w-full h-[1px] bg-[#E5E7EB]
+    }
+    .heading {
+        @apply text-2xl font-bold  leading-tight text-mainText
+    }
+}
